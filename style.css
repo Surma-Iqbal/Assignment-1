@@ -109,7 +109,7 @@
 }
 
 .stars{
-  height: 32px;
+  height: 27px;
   width: 150px;
 }
 .avatar{
@@ -140,12 +140,7 @@
   border-color: #5E3BEE !important;
    
 }
-.myinput1{
-  height: 35px;
-  width: 300px;
-  border-color: #5E3BEE;
-  border-radius: 5px;
-}
+
 .contbtn{
   text-align: center;
 }
