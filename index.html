@@ -3,405 +3,94 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Assignment 1</title>
+    <title>HTML manipulation through DOM by JS</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./bootstrap.css" />
-    <link rel="stylesheet" href="./responsive.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
-    />
+    
+    
   </head>
   <body>
-    <!--navigation-->
+   <!--1.change the tag by button click
 
-    <nav class="navbar navbar-expand-lg position-sticky-top shadow-sm">
-      <div class="container-fluid container d-flex justify-content-between">
-        <div>
-          <img class="logo" src="./figma photos/Logo.png" alt="logo"/>
-        </div>
-        <div class="navbar">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active home" aria-current="page" href="./index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./Portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./About me.html">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./Testimonials.html">Testimonials</a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <button class="btn-nav btn-outline-primary">Contact Me</button>
-        </div>
-      </div>
-    </nav>
-
-    <!--hero-->
-    <div class="hero-main">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="hero1 mt-5">
-              <span>Hey I am Zayan<br></span>
-              <h2 class="hero-head">I create <span class="color-blue">product design</span><br>and brand experience</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros elementum tristique.
-              </p>
-              <button class="herobtn">Get in Touch</button>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="hero2">
-              <img class="hero w-100" src="./figma photos/hero.png" alt="hero"/>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--expertise-->
-    <div class="expertise-main">
-      <div class="container">
-        <div>
-          <span>My Skills</span>
-          <h2>My Expertise</h2>
-        </div>
-        <div class="row">
-          <div class="col-md-3">
-            <div class="card test p-3">
-              <img class="strategy" src="./figma photos/icon1.png" alt="direction"/>
-              <h4>Strategy & Direction</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros elementum tristique.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card test p-3">
-              <img class="strategy" src="./figma photos/icon2.png" alt="logo"/>
-              <h4>Branding & Logo</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros elementum tristique.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card test p-3">
-              <img class="strategy" src="./figma photos/icon3.png" alt="design"/>
-              <h4>UI & UX Design</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros elementum tristique.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card test p-3">
-              <img class="strategy" src="./figma photos/icon4.png" alt="development"/>
-              <h4>Webflow Development</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros elementum tristique.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--About Me-->
-    <div class="about-main">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="about1">
-              <img class="about w-75" src="./figma photos/About Me.png" alt="about-photo"/>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="about2">
-              <span>About<br /></span>
-              <h2>About Me</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                varius faucibus massa sollicitudin amet augue. Nibh metus a
-                semper purus mauris duis. Lorem eu neque, tristique quis duis.
-                Nibh scelerisque ac adipiscing velit non nulla in amet
-                pellentesque. Sit turpis pretium eget maecenas. Vestibulum dolor
-                mattis consectetur eget commodo vitae. Amet pellentesque sit
-                pulvinar lorem mi a, euismod risus r.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--Portfolio-->
-
-    <div class="portfolio-main">
-      <div class="container">
-        <div class="port-head d-flex justify-content-between">
-          <div class="port1">
-            <span>Recent Projects</span><br/>
-            <h2>My Portfolio</h2>
-          </div>
-          <div class="port2">
-            <button class="btn btn-danger btn-port">
-              <i class="fa-brands fa-dribbble"></i> Visit My Dribbble
-            </button>
-          </div>
-        </div>
-        <br/><br/>
-
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card dribbble">
-              <img class="port3" src="./figma photos/Image1.png" alt="ahuse"/>
-              <h5 class="space">Ahuse</h5>
-              <p class="space">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros.
-              </p>
-              <span class="space mybtn2">Visit in Dribbble<i class="bi bi-arrow-up-right"></i></span>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card dribbble">
-              <img class="port3" src="./figma photos/image2.png" alt="dashboard"/>
-              <h5 class="space">App Dashboard</h5>
-              <p class="space">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros.
-              </p>
-              <span class="space mybtn2">Visit in Dribbble <i class="bi bi-arrow-up-right"></i></span>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card dribbble">
-              <img class="port3" src="./figma photos/image3.png" alt="rent"/>
-              <h5 class="space">Easy Rent</h5>
-              <p class="space">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros.
-              </p>
-              <span class="space mybtn2">Visit in Dribbble <i class="bi bi-arrow-up-right"></i></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--Testimonial-->
-
-    <div class="testimonial-main">
-      <div class="container">
-        <span>Clients Feedback</span><br/>
-        <h2>Customer testimonials</h2>
-        <br/><br/>
-
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card testimonial p-4">
-              <div class="testi1">
-                <img class="stars"src="./figma photos/Stars.png"alt="star"/><br/><br/>
-                <p>
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse varius enim in eros elementum tristique. Duis
-                  cursus, mi quis viverra.
-                </p><br/>
-              </div>
-              
-              <div class="testi2">
-                <div class="testia">
-                   <img class="avatar" src="./figma photos/Avatar Image.png" alt="avatar"/><br/>
-                </div>
-                <div class="testib">
-                   <h6>Dianne Russell</h6>
-                   <span>Starbucks</span>
-                </div>
-              </div>
-             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card testimonial p-4">
-              <div class="testi1">
-                 <img class="stars" src="./figma photos/Stars.png" alt="star"/><br><br>
-                 <p>
-                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                     Suspendisse varius enim in eros elementum tristique. Duis
-                     cursus, mi quis viverra.
-                  </p><br/>
-               </div>
-              <div class="testi2">
-                <div class="testia">
-                  <img class="avatar" src="./figma photos/Avatar Image (1).png" alt="avatar1"/><br/>
-                </div>
-                <div class="testib">
-                   <h6>Kristin Watson</h6>
-                   <span>Louis Vuitton</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card testimonial p-4">
-              <div class="testi1">
-                <img class="stars" src="./figma photos/Stars.png" alt="star"/><br/><br/>
-              <p>
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                 Suspendisse varius enim in eros elementum tristique. Duis
-                 cursus, mi quis viverra.
-              </p>
-              <br/>
-            </div>
-            <div class="testi2">
-              <div class="testia">
-                <img class="avatar" src="./figma photos/Avatar Image (2).png" alt="avatar2"/><br/>
-              </div>
-              <div class="testib">
-                <h6>Kathryn Murphy</h6>
-                <span>McDonald's</span>
-              </div>
-            </div>
-              </div>
-             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--contact-->
-    <div class="contact-main">
-      <div class="container">
-          <div class="contact-heading">
-            <h5>Get In Touch</h5>
-            <h2>Contact me</h2>
-            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-          </div>
-          <br>
-        <div class="row justify-content-center">
-          <div class="col-md-6">
-            <div class="row">
-              <div class="col-md-6">
-                <div>  
-                  <label class="form-label">First Name</label><br>
-                  <input type="text" class="form-control myinput" placeholder=""/>
-             </div>
-              </div>
-              <div class="col-md-6">
-                <div>
-                  <label class="form-label">Last Name</label><br>
-                  <input type="text" class="form-control myinput" placeholder=""/>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div>
-                  <label class="form-label">Email address</label><br>
-                  <input type="email" class="form-control myinput" placeholder=""/>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div>
-                  <label class="form-label">Mobile Number</label><br>
-                    <input type="text" class="form-control myinput" placeholder=""/>
-                </div>
-              </div>
-              <div class="col-12">
-                <label class="form-label">Choose a topic</label>
-                <select class="form-select myinput" aria-label="default select example">
-                    <option selected>Select one...</option>
-                    <option value="1">Science</option>
-                    <option value="2">Politics</option>
-                    <option value="3">History</option>
-                    </select><br>
-              </div>
-              <div class="col-12">
-                <label class="form-label">Message</label>
-                <textarea class="form-control myinput" placeholder="Type your message..."rows="6"></textarea><br/>
-                <input class="form-check-input myinput" type="checkbox"/>
-              <label class="form-label">I accept the term</label>
-
-              <div class="contbtn">
-                <button class="mybtn">Submit</button>
-              </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--footer-logo area1-->
-     <div class="footer-main1">
-       <div class="container">
-         <div class="row">
-
-           <div class="col-md-3">
-            <img class="logo" src="./figma photos/Logo.png" alt="logo"/>
-           </div>
-
-           <div class="col-md-6 in-shorts">
-             <span>Home</span>
-             <span>Portfolio</span>
-             <span>About Me</span>
-             <span>Contact</span>
-             <span>Testimonials</span>
-             <span>Portfolio</span>
-           </div>
-
-           <div class="col-md-3 logoarea">
-              <img class="footer-logo" src="./figma photos/Facebook.png" alt="facebook"> 
-              <img class="footer-logo" src="./figma photos/instragram.png" alt="instragram"> 
-              <img class="footer-logo" src="./figma photos/Twitter.png" alt="twitter"> 
-              <img class="footer-logo" src="./figma photos/LinkedIn.png" alt="linkedin"> 
-
-            </div>
-         </div>
-       </div>
-     </div>
+   <p id="toggle">ON</p>
+   <button onclick="toggleText()">toggle text</button>-->
 
 
-     <!--footer-logo area2-->
-     <div class="footer-main2">
-       <div class="container">
-        <h4>__________________________________________________________________________________________________________________________________</h4><br>
-         <div class="row">
-           <div class="col-md-3">
-            <span>Made with 💖 by Airdokan</span>
-           </div>
+   <!--2.From ON to OFF and OFF to ON
 
-           <div class="col-md-5"></div>
+   <p id="toggle">ON</p>
+   <button onclick="toggleText()">toggle text</button>-->
+        
+  <!--3.From ON to OFF and OFF to ON if more than one class
 
-           <div class="col-md-4 complete">
-             <span>Privacy Policy</span>
-             <span>Terms of Service</span>
-             <span>Cookies Settings</span>
-           </div>
-         </div>
-        </div>
-      </div>
+   <p id="toggle">ON</p>
+   <p id="toggle">ON</p>
+   <p id="toggle">ON</p>
+   <button onclick="toggleText()">toggle text</button>-->
+
+   <!-- 4.how to see Input value through DOM -->
+
+   <!-- <form onsubmit="login(event)">
+    <label for="">Username</label>
+    <input id="username1" type="text">
+    <br><br>
+
+    <label for="">Password</label>
+    <input id="password" type="password">
+    <br><br>
+
+    <button type="submit">log in</button>
+
+   </form>
+   <h1 id="message"></h1>
+   <h1 id="pass"></h1> -->
+
+   <!-- 5.welcome message addressing name given in Input value through DOM -->
+
+   <!-- <form onsubmit="login(event)">
+    <label>Username</label>
+    <input id="username" type="text" required>
+    <br><br>
+
+    <label>Password</label>
+    <input id="password" type="password">
+    <br><br>
+
+    <button type="submit">log in</button>
+
+   </form>
+   <p id="loginMessage"></p> -->
+   
+
+   <!-- 6.summation of two number -->
+
+   <!-- <input id="num1" type="number" placeholder="First Number">
+   <input id="num2" type="number" placeholder="Second Number"><br><br>
+   <button onclick="add()">Add</button>
+   <h1 id="ans"></h1> -->
+
+   <!-- 7.counter App(increment-decrement) -->
+
+   <!-- <h1 id="ans">0</h1>
+   <button onclick="add()">increment</button>
+   <button onclick="sub()">decrement</button> -->
+
+   <!-- 8.list using button -->
     
-      
-    <script src="./bootstrap.bundle.js"></script>
+   <!-- <button onclick="addNumber()">add</button>
+   <ul class="parent">
+   </ul> -->
+
+   <!--9.bulb ON/OFF or change the picture
+   
+   <img id="bulb" src="./anime.jpeg" alt="">
+   <br>
+   <button onclick="toggle()">switch</button>-->
+
+
+
+
+   <!-- JS file  -->
+  <script src="./main.js"></script>
   </body>
 </html>
